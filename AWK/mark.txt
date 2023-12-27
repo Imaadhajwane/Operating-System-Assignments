@@ -1,0 +1,6 @@
+101, John Doe, 85, 78, 92, 70, 60
+102, Jane Smith, 60, 72, 50, 45, 55
+103, Michael Johnson, 75, 30, 79, 81, 22
+104, Emily Williams, 40, 55, 68, 72, 49
+105, David Brown, 92, 87, 91, 88, 95
+

@@ -1,0 +1,26 @@
+employee input file .txt dataset (Answers)
+Questions:
+
+1. Pattern Matching
+Answers: 
+awk '/manager/ { count++ } END { print "Number of rows with job title 'manager':", count }' employee.txt
+
+2. Field Seperator
+Answer:
+sed 's/ /,/g' employee.txt
+
+3. Stream Format
+Answer:
+awk '{ for (i = 1; i <= NF; i++) print $i }' employee.txt
+
+4. Logical Operation
+Answer:
+awk '$2 == "manager" && $4 > 30000 { print $1 }' employee.txt
+
+5. Relational Operator
+Answer:
+awk '$NF > 30000 { print $1 }' employee.txt
+
+
+
+

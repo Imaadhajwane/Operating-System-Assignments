@@ -1,0 +1,65 @@
+#!/bin/bash
+
+# Function to perform merge sort
+merge_sort() {
+    local arr=("$@")       # Convert arguments to array
+    local n=${#arr[@]}     # Get length of the array
+
+    if ((n <= 1)); then
+        echo "${arr[@]}"
+        return
+    fi
+
+    local mid=$((n / 2))
+    local left=("${arr[@]:0:mid}")
+    local right=("${arr[@]:mid}")
+
+    left=($(merge_sort "${left[@]}"))
+    right=($(merge_sort "${right[@]}"))
+
+    local i=0
+    local j=0
+    local k=0
+
+    # Merge left and right arrays
+    while ((i < ${#left[@]} && j < ${#right[@]})); do
+        if ((left[i] < right[j])); then
+            arr[k]=${left[i]}
+            i=$((i + 1))
+        else
+            arr[k]=${right[j]}
+            j=$((j + 1))
+        fi
+        k=$((k + 1))
+    done
+
+    # Copy the remaining elements of left, if any
+    while ((i < ${#left[@]})); do
+        arr[k]=${left[i]}
+        i=$((i + 1))
+        k=$((k + 1))
+    done
+
+    # Copy the remaining elements of right, if any
+    while ((j < ${#right[@]})); do
+        arr[k]=${right[j]}
+        j=$((j + 1))
+        k=$((k + 1))
+    done
+
+    echo "${arr[@]}"
+}
+
+# Prompt user for the number of elements
+read -p "Enter the number of elements: " num_elements
+
+# Input array
+numbers=()
+for ((i = 1; i <= num_elements; i++)); do
+    read -p "Enter element $i: " element
+    numbers+=("$element")
+done
+
+echo "Original array: ${numbers[@]}"
+sorted_array=($(merge_sort "${numbers[@]}"))
+echo "Sorted array: ${sorted_array[@]}"
