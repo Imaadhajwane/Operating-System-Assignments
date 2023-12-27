@@ -84,3 +84,5 @@
 2. Memory Allocation algorithm using First-Fit.
 3. Memory Allocation algorithm using Worst-Fit.
 4. Menu driven Memory Allocation algorithm.
+
+### Feel free to contribute, report issues, or suggest improvements!
