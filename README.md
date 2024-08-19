@@ -79,7 +79,7 @@
 3. Disk Scheduling algorithm using Scan.
 4. Disk Scheduling algorithm using SSTF.
 
-## Implementation of Memory Allocation Algorithms.
+## Implementation of Memory Allocation Algorithms. 
 1. Memory Allocation algorithm using Best-Fit.
 2. Memory Allocation algorithm using First-Fit.
 3. Memory Allocation algorithm using Worst-Fit.
