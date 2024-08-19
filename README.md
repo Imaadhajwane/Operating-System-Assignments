@@ -4,7 +4,7 @@
 1. Largest 2 digit number.
 2. Addition of number
 3. Arithematic operation of number
-4. Bubble Sort of an array of number.
+4. Bubble Sort of an array of number. 
 5. Generation of database operation (Insertion, Deletion, Updation, Displaying) with text file generation as output.
 6. Finding Even Odd Number 
 7. Generation of fibonacci sequence 
