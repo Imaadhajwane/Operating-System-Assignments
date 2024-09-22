@@ -1,7 +1,7 @@
 # Operating-System-Assignments
 
 ## Implementation of Shell Programs
-1. Largest 2 digit number.
+1. Largest 2 digit number.  
 2. Addition of number
 3. Arithematic operation of number
 4. Bubble Sort of an array of number. 
